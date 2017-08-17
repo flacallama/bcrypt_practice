@@ -1,0 +1,9 @@
+extends layout
+
+block content
+
+  h2 Country show page
+  
+  h3 #{colors[0].country}
+  - for color in colors
+    p= color.color

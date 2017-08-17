@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  h2 Country edit page
+  
+  form(method="post" action="/countries/#{countID}/edit")
+    input(type='text' name='country' placeholder='#{data[0].country}')
+    br
+    input(type='text' name='country' placeholder='#{data[0].color}')
+    br
+    input(type='text' name='country' placeholder='#{data[1].color}')
+    br
+    input(type='text' name='country' placeholder='#{data[2].color}')
+
+
+  
+  

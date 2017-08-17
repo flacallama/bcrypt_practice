@@ -1,0 +1,10 @@
+extends layout
+
+block content
+
+  h2 You are logged in
+  
+  - for country in countries
+    button 
+      a(href='/countries/#{country.id}') #{country.country}
+    br

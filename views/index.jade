@@ -3,3 +3,7 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  form(method="get" action="/users/login")
+      button(type='submit' value='submit') login
+  form(method="get" action="/users/create")
+      button(type='submit' value='submit') create user

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(method="post" action="/users/create")
+    input(type="text" name="username" placeholder="username")
+    br
+    input(type="text" name="age" placeholder="age")
+    br
+    input(type="text" name="email" placeholder="email")
+    br
+    input(type="password" name="password" placeholder="password")
+    br
+    input(type="password" name="confirm" placeholder="confirm password")
+    br    
+    button(type='submit' value='submit') create user
+    br
+  h2 Already have an account?  
+  form(method="get" action="/users/login")
+    br
+    button(type='submit' value='submit') login
